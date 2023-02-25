@@ -1,13 +1,73 @@
+html {
+    height: 100%;
+}
+
+.header-rule {
+    border-bottom: 1px solid rgb(25, 120, 25) !important;
+}
+
 img {
     height: 400px;
     object-fit: cover;
     object-position: center;
   }
 
+/* from Bulma */
+.icon {
+    align-items: center;
+    display: inline-flex;
+    justify-content: center;
+    height: 1.5rem;
+    width: 1.5rem;
+}
+
+.logo-font:hover {
+    color: rgb(25, 120, 25) !important;
+}
+
 .carousel-caption {
     background-color: rgba(233, 212, 212, 0.77);
 }
 
 .text-green {
-    color: rgb(25, 120, 25);
+    color: rgb(25, 120, 25) !important;
 }
+
+.bg-light-green {
+    background-color: rgb(200, 242, 200) !important;
+}
+
+.shop-now-button {
+    background: rgb(25, 120, 25);
+    color: white;
+    min-width: 260px;
+}
+
+.btn-green {
+    background: rgb(25, 120, 25);
+    color: white;
+}
+
+.shop-now-button:hover,
+.shop-now-button:active,
+.shop-now-button:focus,
+.btn-green:hover,
+.btn-green:active,
+.btn-green:focus {
+    background: rgb(25, 120, 25);
+    color: white;
+}
+
+.border-green {
+    border: 1px solid rgb(25, 120, 25) !important;
+}
+
+/* -------------------------------- Media Queries */
+
+/* only on medium and down */
+@media (max-width: 992px) {
+    .mobile-bg-color {
+        background-color: rgb(200, 242, 200) !important;
+    }
+  }
+

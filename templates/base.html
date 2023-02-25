@@ -43,30 +43,18 @@
 
 <body>
     <header class="container-fluid">
-        <div class="row">
-            <div class="col-4 my-auto py-1 py-lg-0 text-center text-lg-left">
+        <div id="topnav" class="row d-none d-lg-flex bg-light-green">
+            <div class="col-4 my-auto py-1 py-lg-0 text-center">
                 <a href="{% url 'home' %}" class="nav-link main-logo-link">
                     <h2 class="logo-font text-green"><i class="fas fa-hammer fa-lg"></i> WoodWork</h2>
                 </a>
             </div>
             <div class="col-4 my-auto py-1 py-lg-0">
                 <div class="row">
-                    <div class="col-4">
+                    <div class="col-12">
                         <a class="nav-link text-center text-green" href="#">
-                            <i class="fas fa-map-marker"></i>
-                            <p><strong>Location</strong></p>
-                        </a>
-                    </div>
-                    <div class="col-4">
-                        <a class="nav-link text-center text-green" href="#">
-                            <i class="fas fa-search"></i>
+                            <div class="my-2"><i class="fas fa-search fa-lg"></i></div>
                             <p><strong>Reviews</strong></p>
-                        </a>
-                    </div>
-                    <div class="col-4">
-                        <a class="nav-link text-center text-green" href="#">
-                            <i class="fas fa-address-book"></i>
-                            <p><strong>Contact</strong></p>
                         </a>
                     </div>
                 </div>
@@ -83,16 +71,16 @@
                         </a>
                         <div class="dropdown-menu" aria-labelledby="user-options">
                             {% if request.user.is_authenticated %}
-                                <a href="#" class="dropdown-item">My Profile</a>
-                                <a href="#" class="dropdown-item">Logout</a>
+                            <a href="#" class="dropdown-item">My Profile</a>
+                            <a href="{% url 'account_logout' %}" class="dropdown-item">Logout</a>
                             {% else %}
-                                <a href="#" class="dropdown-item">Register</a>
-                                <a href="#" class="dropdown-item">Login</a>
+                                <a href="{% url 'account_signup' %}" class="dropdown-item">Register</a>
+                                <a href="{% url 'account_login' %}" class="dropdown-item">Login</a>
                             {% endif %}
                         </div>
                     </li>
                     <li class="list-inline-item">
-                        <a href="" class="{% if grand_total %}text-info font-weight-bold{% else %}text-green{% endif %} nav-link">
+                        <a href="#" class="{% if grand_total %}text-info font-weight-bold{% else %}text-green{% endif %} nav-link">
                             <div class="text-center my-2">
                                 <div class="my-2"><i class="fas fa-shopping-bag fa-lg"></i></div>
                                 <p>
@@ -108,6 +96,16 @@
                 </ul>
             </div>
         </div>
+        <div class="row mobile-bg-color">
+            <nav class="navbar navbar-expand-lg navbar-light w-100">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                {% include 'includes/mobile-top-header.html' %}
+                {% include 'includes/main-nav.html' %}
+            </nav>
+        </div>
+        <hr class="header-rule">
     </header>
 
     {% if messages %}

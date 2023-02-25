@@ -1,0 +1,14 @@
+img {
+    height: 400px;
+    object-fit: cover;
+    object-position: center;
+  }
+
+.carousel-caption {
+    background-color: rgba(233, 212, 212, 0.77);
+}
+
+.text-green {
+    color: rgb(25, 120, 25);
+    font-size: 1rem;
+}

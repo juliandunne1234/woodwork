@@ -46,7 +46,7 @@
         <div id="topnav" class="row d-none d-lg-flex bg-light-green">
             <div class="col-4 my-auto py-1 py-lg-0 text-center">
                 <a href="{% url 'home' %}" class="nav-link main-logo-link">
-                    <h2 class="logo-font text-green"><i class="fas fa-hammer fa-lg"></i> WoodWork</h2>
+                    <h2 class="text-green"><i class="fas fa-hammer fa-lg"></i> WoodWork</h2>
                 </a>
             </div>
             <div class="col-4 my-auto py-1 py-lg-0">
@@ -84,11 +84,13 @@
                             <div class="text-center my-2">
                                 <div class="my-2"><i class="fas fa-shopping-bag fa-lg"></i></div>
                                 <p>
+                                    <strong>
                                     {% if grand_total %}
                                         ${{ grand_total_total|floatformat:2 }}
                                     {% else %}
                                         €0.00
                                     {% endif %}
+                                    </strong>
                                 </p>
                             </div>
                         </a>
@@ -99,13 +101,12 @@
         <div class="row mobile-bg-color">
             <nav class="navbar navbar-expand-lg navbar-light w-100">
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
+                    <span class="navbar-toggler-icon"></span>
                 </button>
                 {% include 'includes/mobile-top-header.html' %}
                 {% include 'includes/main-nav.html' %}
             </nav>
         </div>
-        <hr class="header-rule">
     </header>
 
     {% if messages %}

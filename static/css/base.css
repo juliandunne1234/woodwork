@@ -29,6 +29,10 @@ html {
     color: rgb(25, 120, 25) !important;
 }
 
+.text-dark-green {
+    color: rgb(9, 60, 9) !important;
+}
+
 .bg-light-green {
     background-color: rgb(200, 242, 200) !important;
 }
@@ -46,6 +50,22 @@ html {
     width: 20vw;
     object-fit: cover;
     object-position: center;
+}
+
+.contact-button {
+    background: rgb(9, 60, 9) !important;
+    color: #fff;
+    width: 200px;
+    border-radius: 10px;
+}
+
+.contact-button:hover {
+    background: #fff;
+    color: rgb(9, 60, 9) !important;
+}
+
+.div-divide {
+    border-top: 2px solid rgb(9, 60, 9) !important;
 }
 
 /* -------------------------------- Media Queries */

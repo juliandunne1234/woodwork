@@ -1,0 +1,162 @@
+[
+    {
+        "pk": 1,
+        "model": "products.product",
+        "fields": {
+            "name": "Floor1",
+            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi quo quidem explicabo quos possimus libero, aspernatur aut nulla maiores consequuntur impedit eveniet dicta. Voluptatem mollitia odit iusto excepturi nulla a?",
+            "image": "pexels-curtis-adams-3935316.jpg",
+            "category":1
+        }
+    },
+    {
+        "pk": 2,
+        "model": "products.product",
+        "fields": {
+            "name": "Floor2",
+            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi quo quidem explicabo quos possimus libero, aspernatur aut nulla maiores consequuntur impedit eveniet dicta. Voluptatem mollitia odit iusto excepturi nulla a?",
+            "image": "pexels-max-rahubovskiy-6970070.jpg",
+            "category":1
+        }
+    },
+    {
+        "pk": 3,
+        "model": "products.product",
+        "fields": {
+            "name": "Floor3",
+            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi quo quidem explicabo quos possimus libero, aspernatur aut nulla maiores consequuntur impedit eveniet dicta. Voluptatem mollitia odit iusto excepturi nulla a?",
+            "image": "pexels-ksenia-chernaya-11112252.jpg",
+            "category":1
+        }
+    },
+    {
+        "pk": 4,
+        "model": "products.product",
+        "fields": {
+            "name": "Floor4",
+            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi quo quidem explicabo quos possimus libero, aspernatur aut nulla maiores consequuntur impedit eveniet dicta. Voluptatem mollitia odit iusto excepturi nulla a?",
+            "image": "pexels-selenic-moon-3767442.jpg",
+            "category":1
+        }
+    },
+    {
+        "pk": 5,
+        "model": "products.product",
+        "fields": {
+            "name": "Kitchen1",
+            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi quo quidem explicabo quos possimus libero, aspernatur aut nulla maiores consequuntur impedit eveniet dicta. Voluptatem mollitia odit iusto excepturi nulla a?",
+            "image": "pexels-curtis-adams-10827379.jpg",
+            "category":2
+        }
+    },
+    {
+        "pk": 6,
+        "model": "products.product",
+        "fields": {
+            "name": "Kitchen2",
+            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi quo quidem explicabo quos possimus libero, aspernatur aut nulla maiores consequuntur impedit eveniet dicta. Voluptatem mollitia odit iusto excepturi nulla a?",
+            "image": "pexels-level-media-3016430.jpg",
+            "category":2
+        }
+    },
+    {
+        "pk": 7,
+        "model": "products.product",
+        "fields": {
+            "name": "Kitchen3",
+            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi quo quidem explicabo quos possimus libero, aspernatur aut nulla maiores consequuntur impedit eveniet dicta. Voluptatem mollitia odit iusto excepturi nulla a?",
+            "image": "pexels-mark-mccammon-2724749.jpg",
+            "category":2
+        }
+    },
+    {
+        "pk": 8,
+        "model": "products.product",
+        "fields": {
+            "name": "Kitchen4",
+            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi quo quidem explicabo quos possimus libero, aspernatur aut nulla maiores consequuntur impedit eveniet dicta. Voluptatem mollitia odit iusto excepturi nulla a?",
+            "image": "pexels-saviesa-home-2089698.jpg",
+            "category":2
+        }
+    },
+    {
+        "pk": 9,
+        "model": "products.product",
+        "fields": {
+            "name": "Door1",
+            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi quo quidem explicabo quos possimus libero, aspernatur aut nulla maiores consequuntur impedit eveniet dicta. Voluptatem mollitia odit iusto excepturi nulla a?",
+            "image": "door-ge0eb092df_1280.jpg",
+            "category":3
+        }
+    },
+    {
+        "pk": 10,
+        "model": "products.product",
+        "fields": {
+            "name": "Door2",
+            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi quo quidem explicabo quos possimus libero, aspernatur aut nulla maiores consequuntur impedit eveniet dicta. Voluptatem mollitia odit iusto excepturi nulla a?",
+            "image": "istockphoto-156443918-612x612.jpg",
+            "category":3
+        }
+    },
+    {
+        "pk": 11,
+        "model": "products.product",
+        "fields": {
+            "name": "Door3",
+            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi quo quidem explicabo quos possimus libero, aspernatur aut nulla maiores consequuntur impedit eveniet dicta. Voluptatem mollitia odit iusto excepturi nulla a?",
+            "image": "door-3036579_960_720.jpg",
+            "category":3
+        }
+    },
+    {
+        "pk": 12,
+        "model": "products.product",
+        "fields": {
+            "name": "Door4",
+            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi quo quidem explicabo quos possimus libero, aspernatur aut nulla maiores consequuntur impedit eveniet dicta. Voluptatem mollitia odit iusto excepturi nulla a?",
+            "image": "door-3059871__340.jpg",
+            "category":3
+        }
+    },
+    {
+        "pk": 13,
+        "model": "products.product",
+        "fields": {
+            "name": "Bespoke1",
+            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi quo quidem explicabo quos possimus libero, aspernatur aut nulla maiores consequuntur impedit eveniet dicta. Voluptatem mollitia odit iusto excepturi nulla a?",
+            "image": "istockphoto-520984710-612x612.jpg",
+            "category":4
+        }
+    },
+    {
+        "pk": 14,
+        "model": "products.product",
+        "fields": {
+            "name": "Bespoke2",
+            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi quo quidem explicabo quos possimus libero, aspernatur aut nulla maiores consequuntur impedit eveniet dicta. Voluptatem mollitia odit iusto excepturi nulla a?",
+            "image": "istockphoto-467372450-612x612.jpg",
+            "category":4
+        }
+    },
+    {
+        "pk": 15,
+        "model": "products.product",
+        "fields": {
+            "name": "Bespoke3",
+            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi quo quidem explicabo quos possimus libero, aspernatur aut nulla maiores consequuntur impedit eveniet dicta. Voluptatem mollitia odit iusto excepturi nulla a?",
+            "image": "pexels-cottonbro-studio-6692615.jpg",
+            "category":4
+        }
+    },
+    {
+        "pk": 16,
+        "model": "products.product",
+        "fields": {
+            "name": "Bespoke4",
+            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi quo quidem explicabo quos possimus libero, aspernatur aut nulla maiores consequuntur impedit eveniet dicta. Voluptatem mollitia odit iusto excepturi nulla a?",
+            "image": "pexels-pavel-danilyuk-7055960.jpg",
+            "category":4
+        }
+    }
+]

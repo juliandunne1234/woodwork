@@ -52,6 +52,17 @@ html {
     object-position: center;
 }
 
+.custom-img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.custom-link:hover {
+    color: rgb(9, 60, 9) !important;
+}
+
 .contact-button {
     background: rgb(9, 60, 9) !important;
     color: #fff;
@@ -76,4 +87,3 @@ html {
         background-color: rgb(200, 242, 200) !important;
     }
   }
-

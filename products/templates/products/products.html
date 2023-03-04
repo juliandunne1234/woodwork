@@ -1,0 +1,78 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block page_header %}
+<div class="container container-header">
+    <div class="row">
+        <div class="col">
+
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block content %}
+<div class="overlay text-center">
+    {% if product.category.friendly_name == "Floors" %}
+    <h2 class="my-1 py-1">Floors</h2>
+    <p class="col-10 offset-1 my-1  py-1">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea atque maxime enim nisi, adipisci impedit
+        minus repudiandae, porro, harum odit nostrum fugit? Vitae similique ad nulla modi repellat accusamus
+        quos?
+    </p>
+    {% elif product.category.friendly_name == "Kitchens" %}
+    <h2 class="my-1 py-1">Kitchens</h2>
+    <p class="col-10 offset-1 my-1  py-1">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea atque maxime enim nisi, adipisci impedit
+        minus repudiandae, porro, harum odit nostrum fugit? Vitae similique ad nulla modi repellat accusamus
+        quos?
+    </p>
+    {% elif product.category.friendly_name == "Doors" %}
+    <h2 class="my-1 py-1">Doors</h2>
+    <p class="col-10 offset-1 my-1  py-1">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea atque maxime enim nisi, adipisci impedit
+        minus repudiandae, porro, harum odit nostrum fugit? Vitae similique ad nulla modi repellat accusamus
+        quos?
+    </p>
+    {% elif product.category.friendly_name == "Bespoke" %}
+    <h2 class="my-1 py-1">Bespoke</h2>
+    <p class="col-10 offset-1 my-1  py-1">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea atque maxime enim nisi, adipisci impedit
+        minus repudiandae, porro, harum odit nostrum fugit? Vitae similique ad nulla modi repellat accusamus
+        quos?
+    </p>
+    {% else %}
+    <h2 class="my-1 py-1">Lorem</h2>
+    <p class="col-10 offset-1 my-1  py-1">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea atque maxime enim nisi, adipisci impedit
+        minus repudiandae, porro, harum odit nostrum fugit? Vitae similique ad nulla modi repellat accusamus
+        quos?
+    </p>
+    {% endif %}
+</div>
+<div class="container-fluid container-xl-screen">
+    <div class="row">
+        <div class="col-12">
+            <hr class="product-divider">
+        </div>
+        {% for product in products %}
+        <div class="product-container col-md-5 offset-md-1 py-1">
+            {% if product.image %}
+            <img class="product-img" src="{{ product.image.url }}" alt="{{ product.name }}">
+            {% else %}
+            <img class="product-img" src="{{MEDIA_URL}}noimage.url" alt="{{ product.name }}">
+            {% endif %}
+        </div>
+        <div class="col-md-4 text-dark-green">
+            <h2 class="text-center my-1 py-1">{{ product.name }}</h2>
+            <p class="my-1 py-1 description-conainer">
+                {{ product.description }}
+            </p>
+        </div>
+        <div class="col-12">
+            <hr class="product-divider">
+        </div>
+        {% endfor %}
+    </div>
+</div>
+{% endblock %}

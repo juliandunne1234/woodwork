@@ -75,15 +75,73 @@ html {
     color: rgb(9, 60, 9) !important;
 }
 
-.div-divide {
-    border-top: 2px solid rgb(9, 60, 9) !important;
+/* Products page */
+.overlay {
+    min-height: 150px;
+    width: 100%;
+    background-color: rgb(9, 60, 9);
+    color: #fff;
+    overflow: hidden;
+}
+
+.product-container {
+    height: 350px;
+    width: 100%;
+}
+
+.product-img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.description-conainer {
+    text-align: justify;
+}
+
+.product-divider {
+    border-bottom: 1px solid rgb(25, 120, 25) !important;
+    width: 75%;
 }
 
 /* -------------------------------- Media Queries */
+
+/* Large screens ----------- */
+@media (min-width : 1500px) {
+    .container-xl-screen {
+        width: 80%;
+    }
+  
+}
+
+/* Extra Large screens ----------- */
+@media (min-width : 1700px) {
+    .container-xl-screen {
+        width: 70%;
+    }
+  
+}
+
+/* Extra Extra Large screens ----------- */
+@media (min-width : 2000px) {
+    .container-xl-screen {
+        width: 60%;
+    }
+  
+}
 
 /* only on medium and down */
 @media (max-width: 992px) {
     .mobile-bg-color {
         background-color: rgb(200, 242, 200) !important;
+    }
+  }
+
+/* only on medium and down */
+@media (max-width: 768px) {
+    .description-conainer {
+        width: 80%;
+        margin: auto;
     }
   }

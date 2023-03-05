@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block page_header %}
+<div class="container container-header">
+    <div class="row">
+        <div class="col">
+
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block content %}
+<div class="container-fluid container-xl-screen">
+    <div class="row">
+        <div class="product-container col-md-5 offset-md-1 py-1">
+            {% if product.image %}
+            <img class="product-img" src="{{ product.image.url }}" alt="{{ product.name }}">
+            {% else %}
+            <img class="product-img" src="{{MEDIA_URL}}noimage.url" alt="{{ product.name }}">
+            {% endif %}
+        </div>
+        <div class="col-md-4 text-dark-green">
+            <h2 class="text-center my-1 py-1">{{ product.name }}</h2>
+            <p class="my-1 py-1 description-conainer">
+                {{ product.description }}
+            </p>
+        </div>
+        <div class="col-12">
+            <hr class="product-divider">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12 col-lg-8 offset-lg-2 d-lg-flex justify-content-center">
+            <div class="col-12 col-lg-4 text-center">
+                <h4>
+                    <a href="#" class="contact-button btn btn-lg py-2">Place Order</a>
+                </h4>
+            </div>
+        </div>
+</div>
+{% endblock %}

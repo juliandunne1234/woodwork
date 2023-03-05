@@ -58,9 +58,13 @@
         {% for product in products %}
         <div class="product-container col-md-5 offset-md-1 py-1">
             {% if product.image %}
-            <img class="product-img" src="{{ product.image.url }}" alt="{{ product.name }}">
+            <a href="{% url 'product_detail' product.id %}">
+                <img class="product-img" src="{{ product.image.url }}" alt="{{ product.name }}">
+            </a>
             {% else %}
-            <img class="product-img" src="{{MEDIA_URL}}noimage.url" alt="{{ product.name }}">
+            <a href="{% url 'product_detail' product.id %}">
+                <img class="product-img" src="{{MEDIA_URL}}noimage.url" alt="{{ product.name }}">
+            </a>
             {% endif %}
         </div>
         <div class="col-md-4 text-dark-green">
@@ -74,5 +78,23 @@
         </div>
         {% endfor %}
     </div>
-</div>
-{% endblock %}
+    <div class="row">
+        <div class="col-12 col-lg-10 offset-lg-1 d-lg-flex">
+            <div class="col-12 col-lg-4 text-center">
+                <h4>
+                    <a href="#" class="contact-button btn btn-lg py-2">Email</a>
+                </h4>
+            </div>
+            <div class="col-12 col-lg-4 text-center">
+                <h4>
+                    <a href="#" class="contact-button btn btn-lg py-2">Phone</a>
+                </h4>
+            </div>
+            <div class="col-12 col-lg-4 text-center">
+                <h4>
+                    <a href="#" class="contact-button btn btn-lg py-2">Requests</a>
+                </h4>
+            </div>
+        </div>
+    </div>
+    {% endblock %}
